@@ -258,7 +258,7 @@ already exist, this method creates one.
 To create a remote shared object, call <code>getRemote()</code> the call
 <code>connect()</code> to connect the remote shared object to the server, as in
 the following:</p>
-<pre><code class="prettyprint as3">var nc:NetConnection = new NetConnection();
+<pre><code class="prettyprint haxe">var nc:NetConnection = new NetConnection();
 nc.connect("rtmp://somedomain.com/applicationName");
 var myRemoteSO:SharedObject = SharedObject.getRemote("mo", nc.uri, false);
 myRemoteSO.connect(nc);</code></pre>
@@ -379,7 +379,7 @@ object. Any changes made locally — before the <code>sync</code> event is
 dispatched — might be lost.</p>
 <p>Call the <code>connect()</code> method to connect to a remote shared object, for
 example:</p>
-<pre><code class="prettyprint as3">var myRemoteSO:SharedObject = SharedObject.getRemote("mo", myNC.uri, false);
+<pre><code class="prettyprint haxe">var myRemoteSO:SharedObject = SharedObject.getRemote("mo", myNC.uri, false);
 myRemoteSO.connect(myNC);</code></pre><p class="javadoc">Parameters:</p><table class="table table-bordered params"><tr><th style="width:25%;"><code>myConnection</code></th><td><p>A NetConnection object that uses the Real-Time
 Messaging Protocol (RTMP), such as a NetConnection
 object used to communicate with Flash Media

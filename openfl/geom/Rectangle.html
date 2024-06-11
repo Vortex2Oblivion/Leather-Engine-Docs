@@ -108,11 +108,11 @@ and its size increases to the left and right by the <code>dx</code> value, and t
 the top and the bottom by the <code>dy</code> value.</p><p class="javadoc">Parameters:</p><table class="table table-bordered params"><tr><th style="width:25%;"><code>dx</code></th><td><p>The value to be added to the left and the right of the
 Rectangle object. The following equation is used to
 calculate the new width and position of the rectangle:</p>
-<pre><code class="prettyprint as3">x -= dx;
+<pre><code class="prettyprint haxe">x -= dx;
 width += 2 * dx;</code></pre></td></tr><tr><th style="width:25%;"><code>dy</code></th><td><p>The value to be added to the top and the bottom of the
 Rectangle. The following equation is used to calculate the
 new height and position of the rectangle:</p>
-<pre><code>y -= dy;
+<pre><code class="prettyprint haxe">y -= dy;
 height += 2 * dy;</code></pre></td></tr></table></div></div><div class="field "><a name="inflatePoint"></a><h3 class="anchor"><code><a href="#inflatePoint"><span class="identifier">inflatePoint</span></a>(<span style="white-space:nowrap">point:<a class="type" title="openfl.geom.Point - The Point object represents a location in a two-dimensional coordinate system, where x represents the horizontal axis and y represents the vertical axis." href="../../openfl/geom/Point.html">Point</a></span>):<a class="type" title="Void - The standard Void type." href="../../Void.html">Void</a></code></h3><div class="doc"><p>Increases the size of the Rectangle object. This method is similar to
 the <code><a href="../../openfl/geom/Rectangle.html#inflate">Rectangle.inflate</a>()</code> method except it takes a Point object as a
 parameter.
